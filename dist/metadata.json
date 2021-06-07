@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.premid.app/metadata/1.4",
+  "author": {
+    "name": "BasicallyWiz",
+    "id": "324588568951390220"
+  },
+  "service": "Anime Notifier",
+  "description": {
+    "en": "Started as a site to give you notifications whenever your favourite anime goes live, Anime Notifier is now also useable as an anime list, with an extention so you don't have to leave your anime to keep your list up-to-date."
+  },
+  "url": "notify.moe",
+  "version": "1.1.0",
+  "logo": "https://i.imgur.com/hkP5B5D.png",
+  "thumbnail": "https://i.imgur.com/Y0LdqjB.png",
+  "color": "#e3b7a7",
+  "tags": ["notify", "anime", "notifymoe", "notifier"],
+  "category": "anime",
+  "settings": [
+    {
+      "id": "button-to-list",
+      "title": "Show 'View My List' button",
+      "value": false
+    },
+    {
+      "id": "set-user-name",
+      "if": { "button-to-list": true },
+      "title": "Notify user name",
+      "placeholder": "+UserNameCaseSensitive"
+    }
+  ]
+}
